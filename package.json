@@ -1,12 +1,12 @@
 {
-  "name": "{{PACKAGE_NAME}}",
+  "name": "docsify-plugin-page-history",
   "description": "",
   "keywords": [
     "docsify"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/simochee/{{PACKAGE_NAME}}.git"
+    "url": "https://github.com/simochee/docsify-plugin-page-history.git"
   },
   "author": {
     "name": "simochee",
@@ -14,7 +14,7 @@
     "url": "https://simochee.net"
   },
   "type": "module",
-  "main": "lib/{{PACKAGE_NAME}}.js",
+  "main": "lib/docsify-plugin-page-history.js",
   "files": [
     "lib"
   ],
