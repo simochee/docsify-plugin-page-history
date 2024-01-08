@@ -1,5 +1,6 @@
 {
   "name": "docsify-plugin-page-history",
+  "version": "1.2.1",
   "description": "",
   "keywords": [
     "docsify"
