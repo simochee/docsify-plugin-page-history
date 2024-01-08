@@ -1,0 +1,41 @@
+{
+  "name": "{{PACKAGE_NAME}}",
+  "description": "",
+  "keywords": [
+    "docsify"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simochee/{{PACKAGE_NAME}}.git"
+  },
+  "author": {
+    "name": "simochee",
+    "email": "lollipop@simochee.net",
+    "url": "https://simochee.net"
+  },
+  "type": "module",
+  "main": "lib/{{PACKAGE_NAME}}.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "husky install",
+    "watch": "rollup -c -w"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "prettier-plugin-packagejson": "^2.4.9",
+    "rollup": "^4.9.4"
+  },
+  "packageManager": "pnpm@8.14.0+sha256.9cebf61abd83f68177b29484da72da9751390eaad46dfc3072d266bfbb1ba7bf",
+  "volta": {
+    "node": "20.10.0"
+  }
+}
