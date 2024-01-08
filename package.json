@@ -23,6 +23,16 @@
     "prepare": "husky install",
     "watch": "rollup -c -w"
   },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "dependencies": {
+    "front-matter": "^4.0.2",
+    "htm": "^3.1.1",
+    "vhtml": "^2.2.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
@@ -37,10 +47,5 @@
   "packageManager": "pnpm@8.14.0+sha256.9cebf61abd83f68177b29484da72da9751390eaad46dfc3072d266bfbb1ba7bf",
   "volta": {
     "node": "20.10.0"
-  },
-  "dependencies": {
-    "front-matter": "^4.0.2",
-    "htm": "^3.1.1",
-    "vhtml": "^2.2.0"
   }
 }
