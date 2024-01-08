@@ -25,7 +25,33 @@ Insert a script tag to load the plugin script file after loading the Docsify scr
 
 ## 🔰 Usage
 
-how to use this plugin...
+### Add page history
+
+Add `history` field to page front-matter.
+
+```md
+---
+history:
+  - date: 2023-10-15 <!-- suggest YYYY-MM-DD -->
+    message: Add **awesome section**.
+  - date: 2023-10-10
+    message: Initial release
+---
+
+## Page Title
+
+...
+```
+
+### Display all page history
+
+Add `@[page-history]` to your markdown file
+
+```md
+# History
+
+@[page-history]
+```
 
 ## 💻 Development
 
