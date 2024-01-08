@@ -1,5 +1,5 @@
 {
-  "liveServer.settings.mount": [["/", "./dist"]],
-  "liveServer.settings.file": "dist/{{PACKAGE_NAME}}.js",
+  "liveServer.settings.mount": [["/", "./lib"]],
+  "liveServer.settings.file": "lib/docsify-plugin-page-history.js",
   "liveServer.settings.NoBrowser": true
 }

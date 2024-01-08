@@ -1,18 +1,15 @@
-> [!IMPORTANT]
-> First, replace some placeholder `{{PACKAGE_NAME}}` with your package name.
-
 <p align="center">
   <img src="docsify.svg" alt="Docsify Logo" height="128">
 </p>
 <h1 align="center">Docsify Plugins</h1>
-<h3 align="center">{{PACKAGE_NAME}}</h3>
+<h3 align="center">Page History</h3>
 <p align="center">by <a href="https://github.com/simochee">simochee</a></p>
 
-[![jsDelivr](https://data.jsdelivr.com/v1/package/npm/{{PACKAGE_NAME}}/badge)](https://www.jsdelivr.com/package/npm/{{PACKAGE_NAME}})
-[![npm version](https://badge.fury.io/js/{{PACKAGE_NAME}}.svg)](https://badge.fury.io/js/{{PACKAGE_NAME}})
-[![License](https://img.shields.io/npm/l/{{PACKAGE_NAME}})](https://github.com/simochee/{{PACKAGE_NAME}}/blob/main/LICENSE)
+[![jsDelivr](https://data.jsdelivr.com/v1/package/npm/docsify-plugin-page-history/badge)](https://www.jsdelivr.com/package/npm/docsify-plugin-page-history)
+[![npm version](https://badge.fury.io/js/docsify-plugin-page-history.svg)](https://badge.fury.io/js/docsify-plugin-page-history)
+[![License](https://img.shields.io/npm/l/docsify-plugin-page-history)](https://github.com/simochee/docsify-plugin-page-history/blob/main/LICENSE)
 
-about this plugin...
+Page-by-page history for Docsify.
 
 ## 📀 Installation
 
@@ -23,12 +20,38 @@ Insert a script tag to load the plugin script file after loading the Docsify scr
   window.$docsify = {};
 </script>
 <script src="//cdn.jsdelivr.net/npm/docsify@v4/lib/docsify.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/{{PACKAGE_NAME}}"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-plugin-page-history/lib/docsify-plugin-page-history.min.js"></script>
 ```
 
 ## 🔰 Usage
 
-how to use this plugin...
+### Add page history
+
+Add `history` field to page front-matter.
+
+```md
+---
+history:
+  - date: 2023-10-15 <!-- recommended YYYY-MM-DD -->
+    message: Add **awesome section**.
+  - date: 2023-10-10
+    message: Initial release
+---
+
+## Page Title
+
+...
+```
+
+### Display all page history
+
+Add `@[page-history]` to your markdown file
+
+```md
+# History
+
+@[page-history]
+```
 
 ## 💻 Development
 
