@@ -47,6 +47,16 @@ export const parseHistory = (input) => {
 
     return input
       .filter((item) => typeof item === "object" && item !== null)
+      // 日付を大きい順に並び替える
+      .sort((x, y) => {
+        if (x instanceof Date) {
+          if (y instanceof Date) {
+            return y - x > 0 ? 1 : -1;
+          }
+          return -1;
+        }
+        return 1;
+      })
       .map((item) => {
         return {
           date: formatDate(item.date),
