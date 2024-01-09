@@ -33,6 +33,19 @@ export const formatDate = (date) => {
 };
 
 /**
+ * メッセージを正規化する
+ * @param {string | string[]} message
+ * @returns {string}
+ */
+export const normalizeMessage = (message) => {
+  if (Array.isArray(message)) {
+    return message.join(" ");
+  }
+
+  return message;
+};
+
+/**
  * 履歴をパースする
  * @param {History[]} input
  * @returns {History[]}
@@ -45,24 +58,26 @@ export const parseHistory = (input) => {
       throw TypeError(msg('"history" must be an array'));
     }
 
-    return input
-      .filter((item) => typeof item === "object" && item !== null)
-      // 日付を大きい順に並び替える
-      .sort((x, y) => {
-        if (x instanceof Date) {
-          if (y instanceof Date) {
-            return y - x > 0 ? 1 : -1;
+    return (
+      input
+        .filter((item) => typeof item === "object" && item !== null)
+        // 日付を大きい順に並び替える
+        .sort((x, y) => {
+          if (x instanceof Date) {
+            if (y instanceof Date) {
+              return y - x > 0 ? 1 : -1;
+            }
+            return -1;
           }
-          return -1;
-        }
-        return 1;
-      })
-      .map((item) => {
-        return {
-          date: formatDate(item.date),
-          message: item.message,
-        };
-      });
+          return 1;
+        })
+        .map(({ date, message }) => {
+          return {
+            date: formatDate(date),
+            message: normalizeMessage(message),
+          };
+        })
+    );
   } catch (err) {
     console.error(err);
 

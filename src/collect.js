@@ -1,4 +1,4 @@
-import { formatDate } from "./utils.js";
+import { formatDate, normalizeMessage } from "./utils.js";
 import fm from "front-matter";
 
 const getAllPaths = (router) => {
@@ -35,7 +35,7 @@ export const collectHistory = async (router) => {
           path,
           date: formatDate(date),
           title,
-          message,
+          message: normalizeMessage(message),
         }));
       } catch {
         return;
