@@ -8,6 +8,7 @@
 [![jsDelivr](https://data.jsdelivr.com/v1/package/npm/docsify-plugin-page-history/badge)](https://www.jsdelivr.com/package/npm/docsify-plugin-page-history)
 [![npm version](https://badge.fury.io/js/docsify-plugin-page-history.svg)](https://badge.fury.io/js/docsify-plugin-page-history)
 [![License](https://img.shields.io/npm/l/docsify-plugin-page-history)](https://github.com/simochee/docsify-plugin-page-history/blob/main/LICENSE)
+[![Release](https://github.com/simochee/docsify-plugin-page-history/actions/workflows/release.yaml/badge.svg)](https://github.com/simochee/docsify-plugin-page-history/actions/workflows/release.yaml)
 
 Page-by-page history for Docsify.
 
