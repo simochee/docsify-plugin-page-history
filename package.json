@@ -8,6 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/simochee/docsify-plugin-page-history.git"
   },
+  "license": "MIT",
   "author": {
     "name": "simochee",
     "email": "lollipop@simochee.net",
