@@ -32,10 +32,12 @@ Add `history` field to page front-matter.
 ```md
 ---
 history:
-  - date: 2023-10-15 <!-- recommended YYYY-MM-DD -->
-    message: Add **awesome section**.
+  - date: 2023-10-15 # recommended YYYY-MM-DD
+    message: |
+      Add **awesome section**.
   - date: 2023-10-10
-    message: Initial release
+    message: |
+      Initial release
 ---
 
 ## Page Title

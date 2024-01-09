@@ -62,7 +62,7 @@ export const parseHistory = (input) => {
       input
         .filter((item) => typeof item === "object" && item !== null)
         // 日付を大きい順に並び替える
-        .sort((x, y) => {
+        .sort(({ date: x }, { date: y }) => {
           if (x instanceof Date) {
             if (y instanceof Date) {
               return y - x > 0 ? 1 : -1;
