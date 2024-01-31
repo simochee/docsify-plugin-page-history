@@ -21,6 +21,7 @@ Insert a script tag to load the plugin script file after loading the Docsify scr
   window.$docsify = {};
 </script>
 <script src="//cdn.jsdelivr.net/npm/docsify@v4/lib/docsify.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify@v4/lib/plugins/front-matter.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/docsify-plugin-page-history/lib/docsify-plugin-page-history.min.js"></script>
 ```
 
